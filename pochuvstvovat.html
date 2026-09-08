@@ -4,63 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>03 ПОЧУВСТВОВАТЬ — Мир шедевров</title>
-  <meta name="description" content="Материалы раздела 03 «Почувствовать»: настроение, звук и выражение впечатления без слов.">
+  <meta name="description" content="Материалы папки 03 «Почувствовать»: настроение, звук и выражение впечатления без слов.">
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .p03-section {
-      margin: 34px 0;
+    .p03-download {
+      border: 1px solid #cbb995;
+      padding: 28px 30px;
+      margin: 36px 0 54px;
+      background: rgba(255,255,255,.22);
     }
 
-    .p03-heading {
-      margin-bottom: 8px;
+    .p03-download-label {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8a6729;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
-    .p03-note {
-      margin-top: 0;
-      margin-bottom: 20px;
+    .p03-download h2 {
+      margin: 0 0 18px;
+      font-size: 32px;
     }
 
-    .p03-grid {
+    .p03-download-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
+      grid-template-columns: minmax(260px, 1fr) auto;
+      gap: 28px;
+      align-items: center;
     }
 
-    .p03-card {
-      display: block;
-      text-decoration: none;
-    }
-
-    .p03-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 14px;
-      box-shadow: 0 5px 18px rgba(0,0,0,.12);
-      transition: transform .2s ease;
-    }
-
-    .p03-card img:hover {
-      transform: translateY(-3px);
-    }
-
-    .p03-materials {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
-
-    .p03-material {
-      padding: 20px;
-      border-radius: 16px;
-      background: #f8eeee;
-      border: 1px solid #e5c9c9;
-    }
-
-    .p03-material h3 {
-      margin-top: 0;
+    .p03-download-text {
+      line-height: 1.55;
     }
 
     .p03-buttons {
@@ -69,8 +46,99 @@
       gap: 10px;
     }
 
-    .p03-buttons a {
+    .p03-btn {
       display: inline-block;
+      padding: 13px 18px;
+      border: 1px solid #5b4639;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #30251f;
+      font-weight: 700;
+      background: #fffaf0;
+    }
+
+    .p03-btn.primary {
+      background: #49382e;
+      color: white;
+    }
+
+    .p03-section {
+      margin: 44px 0;
+    }
+
+    .p03-section h2 {
+      margin-bottom: 8px;
+    }
+
+    .p03-note {
+      margin-top: 0;
+      margin-bottom: 22px;
+    }
+
+    .p03-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .p03-card {
+      display: block;
+      text-decoration: none;
+    }
+
+    .p03-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 14px rgba(55,40,30,.13);
+    }
+
+    .audio-link {
+      display: inline-block;
+      margin: 5px 0 22px;
+      padding: 12px 18px;
+      background: #f1d9a2;
+      color: #30251f;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+
+    .p03-principle {
+      text-align: center;
+      border-top: 1px solid #d7c9ae;
+      border-bottom: 1px solid #d7c9ae;
+      margin: 54px 0 36px;
+      padding: 32px 20px;
+    }
+
+    .p03-principle .small {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8a6729;
+      font-weight: 700;
+    }
+
+    .p03-principle h2 {
+      font-size: 32px;
+      margin: 15px 0 10px;
+    }
+
+    @media (max-width: 760px) {
+      .p03-download-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .p03-buttons {
+        flex-direction: column;
+      }
+
+      .p03-btn {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -81,9 +149,9 @@
   <div class="wrap">
     <div class="eyebrow">КАРТИННАЯ ГАЛЕРЕЯ В ДЕТСКОМ САДУ</div>
     <h1>03 ПОЧУВСТВОВАТЬ</h1>
-    <p class="lead">Выбираю • слушаю • выражаю</p>
+    <p class="lead">Слушаю • выбираю • выражаю</p>
     <p class="subtitle">
-      Учимся замечать настроение картины, слышать её и выражать своё впечатление.
+      Учимся чувствовать настроение картины, слышать её и выражать своё впечатление.
     </p>
     <a class="primary" href="index.html">← Вернуться в методическую копилку</a>
   </div>
@@ -91,182 +159,137 @@
 
 <main class="wrap">
 
-  <section class="intro">
-    <h2>Не только увидеть, но и почувствовать</h2>
-    <p>
-      Здесь нет единственно правильного ответа. Ребёнок рассматривает произведение,
-      замечает собственное эмоциональное впечатление и выбирает способ его выразить:
-      словом, звуком, мимикой, жестом или движением.
-    </p>
+  <section class="p03-download">
+    <div class="p03-download-label">МАТЕРИАЛЫ ПАПКИ №03</div>
+    <h2>Скачать материалы «ПОЧУВСТВОВАТЬ»</h2>
+
+    <div class="p03-download-grid">
+      <div class="p03-download-text">
+        <strong>Карточки для печати:</strong> 18 двусторонних карточек —
+        три серии по 6 карточек.<br>
+        <strong>Методическое сопровождение:</strong> материалы для педагога,
+        содержание папки и рекомендации по работе с комплектом.
+      </div>
+
+      <div class="p03-buttons">
+        <a class="p03-btn primary"
+           href="03-pochuvstvovat-kartochki-A4.pdf"
+           target="_blank">
+          Скачать 18 карточек для печати
+        </a>
+
+        <a class="p03-btn"
+           href="03-pochuvstvovat-metodicheskoe-soprovozhdenie.pdf"
+           target="_blank">
+          Скачать методическое сопровождение
+        </a>
+      </div>
+    </div>
   </section>
 
 
-  <!-- 01 НАСТРОЕНИЕ -->
-
   <section class="p03-section">
-    <h2 class="p03-heading">01. НАСТРОЕНИЕ</h2>
+    <h2>01. НАСТРОЕНИЕ</h2>
     <p class="p03-note">
       Выбираю настроение, которое подходит моему впечатлению от картины.
     </p>
 
     <div class="p03-grid">
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/01.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/01.jpg" alt="Настроение — карточка 1">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/02.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/02.jpg" alt="Настроение — карточка 2">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/03.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/03.jpg" alt="Настроение — карточка 3">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/04.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/04.jpg" alt="Настроение — карточка 4">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/05.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/05.jpg" alt="Настроение — карточка 5">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/06.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/01-nastroenie/06.jpg" alt="Настроение — карточка 6">
       </a>
-
     </div>
   </section>
 
 
-  <!-- 02 КАК ЗВУЧИТ КАРТИНА -->
-
   <section class="p03-section">
-    <h2 class="p03-heading">02. КАК ЗВУЧИТ КАРТИНА?</h2>
+    <h2>02. КАК ЗВУЧИТ КАРТИНА?</h2>
     <p class="p03-note">
       Слушаю, сопоставляю и представляю, какие звуки могли бы жить внутри картины.
     </p>
 
-    <p>
-      <a class="primary" href="audio-03.html">♪ Открыть аудиотеку — 13 звуков</a>
-    </p>
+    <a class="audio-link" href="audio-03.html">
+      ♪ Открыть аудиотеку — 13 звуков
+    </a>
 
     <div class="p03-grid">
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/01.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/01.jpg" alt="Как звучит картина — карточка 1">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/02.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/02.jpg" alt="Как звучит картина — карточка 2">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/03.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/03.jpg" alt="Как звучит картина — карточка 3">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/04.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/04.jpg" alt="Как звучит картина — карточка 4">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/05.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/05.jpg" alt="Как звучит картина — карточка 5">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/06.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/02-kak-zvuchit-kartina/06.jpg" alt="Как звучит картина — карточка 6">
       </a>
-
     </div>
   </section>
 
 
-  <!-- 03 ПОКАЖИ БЕЗ СЛОВ -->
-
   <section class="p03-section">
-    <h2 class="p03-heading">03. ПОКАЖИ БЕЗ СЛОВ</h2>
+    <h2>03. ПОКАЖИ БЕЗ СЛОВ</h2>
     <p class="p03-note">
       Выражаю своё впечатление через мимику, жест, позу и движение.
     </p>
 
     <div class="p03-grid">
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/01.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/01.jpg" alt="Покажи без слов — карточка 1">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/02.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/02.jpg" alt="Покажи без слов — карточка 2">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/03.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/03.jpg" alt="Покажи без слов — карточка 3">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/04.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/04.jpg" alt="Покажи без слов — карточка 4">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/05.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/05.jpg" alt="Покажи без слов — карточка 5">
       </a>
-
       <a class="p03-card" href="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/06.jpg" target="_blank">
         <img src="assets/03-pochuvstvovat-WEB-light/cards/03-pokazhi-bez-slov/06.jpg" alt="Покажи без слов — карточка 6">
       </a>
-
     </div>
   </section>
 
 
-  <!-- МАТЕРИАЛЫ ПАПКИ -->
-
-  <section class="p03-section">
-    <h2>Материалы папки 03</h2>
-
-    <div class="p03-materials">
-
-      <div class="p03-material">
-        <h3>Обложки</h3>
-        <div class="p03-buttons">
-          <a class="primary" href="assets/03-pochuvstvovat-WEB-light/materials/cover-outer.jpg" target="_blank">Наружная</a>
-          <a class="primary" href="assets/03-pochuvstvovat-WEB-light/materials/cover-inner.jpg" target="_blank">Внутренняя</a>
-        </div>
-      </div>
-
-      <div class="p03-material">
-        <h3>Содержание</h3>
-        <a class="primary" href="assets/03-pochuvstvovat-WEB-light/materials/contents.jpg" target="_blank">Открыть содержание</a>
-      </div>
-
-      <div class="p03-material">
-        <h3>Методическая подсказка</h3>
-        <div class="p03-buttons">
-          <a class="primary" href="assets/03-pochuvstvovat-WEB-light/materials/metodichka-front.jpg" target="_blank">Лицевая сторона</a>
-          <a class="primary" href="assets/03-pochuvstvovat-WEB-light/materials/metodichka-back.jpg" target="_blank">Оборот</a>
-        </div>
-      </div>
-
-      <div class="p03-material">
-        <h3>Аудиотека</h3>
-        <p>13 звуковых фрагментов для работы с карточками.</p>
-        <div class="p03-buttons">
-          <a class="primary" href="audio-03.html">Открыть аудиотеку</a>
-          <a class="primary" href="assets/03-pochuvstvovat-WEB-light/audio/qr-card.jpg" target="_blank">QR-карточка</a>
-        </div>
-      </div>
-
-    </div>
+  <section class="p03-principle">
+    <div class="small">ПРИНЦИП</div>
+    <h2>Не угадать чувство — а выразить своё</h2>
+    <p>
+      У ребёнка нет единственного правильного ответа:
+      важно заметить собственное впечатление от произведения
+      и найти способ его выразить.
+    </p>
   </section>
 
 </main>
-
-<footer>
-  <div class="wrap">
-    <p><strong>Мир шедевров</strong> · Картинная галерея ДОУ</p>
-    <p>ВИЖУ → ЧУВСТВУЮ → ВЫРАЖАЮ</p>
-  </div>
-</footer>
 
 </body>
 </html>
