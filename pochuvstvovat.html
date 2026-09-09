@@ -7,7 +7,65 @@
   <meta name="description" content="Материалы папки 03 «Почувствовать»: настроение, звук и выражение впечатления без слов.">
   <link rel="stylesheet" href="style.css">
 
+ 
   <style>
+        .p03-series {
+      border: 1px solid #d8c9ad;
+      background: rgba(255,255,255,.22);
+      margin: 12px 0;
+    }
+
+    .p03-series summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 20px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .p03-series summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .p03-series summary::before {
+      content: "›";
+      font-size: 24px;
+      color: #a86729;
+      transition: transform .2s ease;
+    }
+
+    .p03-series[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    .p03-series summary span:first-child {
+      flex: 1;
+      font-size: 20px;
+    }
+
+    .p03-series summary small {
+      font-size: 13px;
+      font-weight: normal;
+      opacity: .65;
+    }
+
+    .p03-open {
+      font-size: 14px;
+      text-decoration: underline;
+      white-space: nowrap;
+    }
+
+    .p03-series > .p03-note,
+    .p03-series > .p03-grid {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .p03-series > .p03-grid {
+      margin-bottom: 22px;
+    }
     .p03-download {
       border: 1px solid #cbb995;
       padding: 28px 30px;
