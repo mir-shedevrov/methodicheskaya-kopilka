@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>04 ПОРТРЕТ ГОВОРИТ — Мир шедевров</title>
+  <meta name="description" content="Материалы папки 04 «Портрет говорит»: лицо, поза и одежда в портрете. Для детей 5–7 лет.">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .p04-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px 18px 60px;
+    }
+
+    .p04-hero {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .p04-number {
+      display: inline-block;
+      background: #7c171d;
+      color: #fff8e9;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .p04-hero h1 {
+      margin: 0 0 10px;
+      color: #75171d;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.05;
+    }
+
+    .p04-subtitle {
+      max-width: 760px;
+      margin: 0 auto 12px;
+      font-size: 19px;
+      line-height: 1.55;
+    }
+
+    .p04-age {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 7px 14px;
+      background: #f4e8d2;
+      border: 1px solid #c9a96a;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .p04-intro {
+      background: #fffaf0;
+      border: 1px solid #d6b77b;
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin: 0 0 24px;
+      line-height: 1.6;
+    }
+
+    .p04-series {
+      border: 1px solid #d8c09a;
+      border-radius: 16px;
+      background: rgba(255,255,255,.55);
+      margin: 15px 0;
+      overflow: hidden;
+    }
+
+    .p04-series summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 20px;
+      color: #67151b;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .p04-series summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .p04-series summary::after {
+      content: "＋";
+      flex: 0 0 auto;
+      font-size: 27px;
+      font-weight: 400;
+      color: #8a6426;
+    }
+
+    .p04-series[open] summary::after {
+      content: "−";
+    }
+
+    .p04-series-desc {
+      margin: -2px 20px 16px;
+      line-height: 1.5;
+      color: #4e4538;
+    }
+
+    .p04-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      padding: 0 20px 22px;
+    }
+
+    .p04-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .p04-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 13px;
+      border: 1px solid #d9c5a0;
+      box-shadow: 0 5px 16px rgba(70,45,20,.12);
+    }
+
+    .p04-materials {
+      margin-top: 34px;
+      padding: 24px;
+      border: 1px solid #d7bd8d;
+      border-radius: 16px;
+      background: #fffaf1;
+    }
+
+    .p04-materials h2 {
+      margin-top: 0;
+      color: #74191e;
+    }
+
+    .p04-method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .p04-method-grid img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #d7c29c;
+    }
+
+    .p04-downloads {
+      margin-top: 34px;
+      padding: 24px;
+      border-radius: 16px;
+      background: #f1ead8;
+      border: 1px solid #c9b17b;
+    }
+
+    .p04-downloads h2 {
+      margin-top: 0;
+      color: #74191e;
+    }
+
+    .p04-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .p04-btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: #74191e;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .p04-btn:hover {
+      opacity: .9;
+    }
+
+    .p04-note {
+      margin-top: 30px;
+      text-align: center;
+      font-style: italic;
+      color: #6e5a3c;
+    }
+
+    @media (max-width: 760px) {
+      .p04-grid,
+      .p04-method-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .p04-series summary {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main class="p04-wrap">
+
+  <section class="p04-hero">
+    <div class="p04-number">04</div>
+    <h1>ПОРТРЕТ ГОВОРИТ</h1>
+
+    <p class="p04-subtitle">
+      Учимся рассматривать портрет и замечать,
+      что лицо, поза, жесты и одежда могут рассказать о человеке.
+    </p>
+
+    <div class="p04-age">Возраст: 5–7 лет</div>
+  </section>
+
+
+  <section class="p04-intro">
+    <strong>Что находится в папке</strong><br>
+    3 серии по 6 карточек — всего 18 самостоятельных карточек.
+    Карточки не требуют прохождения по порядку: педагог может выбрать
+    одну или несколько в зависимости от портрета, возраста и интереса детей.
+  </section>
+
+
+  <details class="p04-series">
+    <summary>
+      <span>01 · ПОСМОТРИ НА ЛИЦО — 6 карточек</span>
+    </summary>
+
+    <p class="p04-series-desc">
+      Помогает ребёнку внимательно рассматривать лицо человека,
+      замечать его выражение, взгляд и настроение.
+    </p>
+
+    <div class="p04-grid">
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__1.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__1.jpg"
+             alt="Посмотри на лицо — карточка 1">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__2.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__2.jpg"
+             alt="Посмотри на лицо — карточка 2">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__3.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__3.jpg"
+             alt="Посмотри на лицо — карточка 3">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__4.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__4.jpg"
+             alt="Посмотри на лицо — карточка 4">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__5.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__5.jpg"
+             alt="Посмотри на лицо — карточка 5">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__6.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/01 Посмотри на лицо__6.jpg"
+             alt="Посмотри на лицо — карточка 6">
+      </a>
+    </div>
+  </details>
+
+
+  <details class="p04-series">
+    <summary>
+      <span>02 · О ЧЁМ ГОВОРИТ ПОЗА? — 6 карточек</span>
+    </summary>
+
+    <p class="p04-series-desc">
+      Помогает замечать позу, жесты и положение тела
+      и понимать, что они могут рассказать о человеке.
+    </p>
+
+    <div class="p04-grid">
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__1.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__1.jpg"
+             alt="О чём говорит поза — карточка 1">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__2.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__2.jpg"
+             alt="О чём говорит поза — карточка 2">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__3.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__3.jpg"
+             alt="О чём говорит поза — карточка 3">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__4.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__4.jpg"
+             alt="О чём говорит поза — карточка 4">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__5.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__5.jpg"
+             alt="О чём говорит поза — карточка 5">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__6.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/02 О чем говорит поза__6.jpg"
+             alt="О чём говорит поза — карточка 6">
+      </a>
+    </div>
+  </details>
+
+
+  <details class="p04-series">
+    <summary>
+      <span>03 · ОДЕЖДА РАССКАЗЫВАЕТ — 6 карточек</span>
+    </summary>
+
+    <p class="p04-series-desc">
+      Помогает замечать одежду, головные уборы и украшения,
+      называть их детали и рассуждать о внешнем облике человека.
+    </p>
+
+    <div class="p04-grid">
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__1.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__1.jpg"
+             alt="Одежда рассказывает — карточка 1">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__2.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__2.jpg"
+             alt="Одежда рассказывает — карточка 2">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__3.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__3.jpg"
+             alt="Одежда рассказывает — карточка 3">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__4.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__4.jpg"
+             alt="Одежда рассказывает — карточка 4">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__5.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__5.jpg"
+             alt="Одежда рассказывает — карточка 5">
+      </a>
+
+      <a class="p04-card"
+         href="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__6.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/03 Одежда расскажет__6.jpg"
+             alt="Одежда рассказывает — карточка 6">
+      </a>
+    </div>
+  </details>
+
+
+  <section class="p04-materials">
+    <h2>Педагогу</h2>
+    <p>
+      Краткое методическое сопровождение и содержание папки.
+    </p>
+
+    <div class="p04-method-grid">
+      <a href="assets/04-portret-govorit-WEB-light/Педагогу.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/Педагогу.jpg"
+             alt="Педагогу — как работать с папкой">
+      </a>
+
+      <a href="assets/04-portret-govorit-WEB-light/Содержание.jpg"
+         target="_blank">
+        <img src="assets/04-portret-govorit-WEB-light/Содержание.jpg"
+             alt="Содержание папки 04 Портрет говорит">
+      </a>
+    </div>
+  </section>
+
+
+  <section class="p04-downloads">
+    <h2>Скачать материалы</h2>
+
+    <div class="p04-buttons">
+      <a class="p04-btn"
+         href="04-portret-govorit-kartochki-A4-WEB.pdf"
+         target="_blank">
+        Карточки — PDF
+      </a>
+
+      <a class="p04-btn"
+         href="04-portret-govorit-metodicheskoe-soprovozhdenie.pdf"
+         target="_blank">
+        Методическое сопровождение — PDF
+      </a>
+    </div>
+  </section>
+
+
+  <p class="p04-note">
+    Карточки самостоятельны: их можно использовать отдельно
+    и не обязательно проходить по порядку.
+  </p>
+
+</main>
+
+</body>
+</html>
