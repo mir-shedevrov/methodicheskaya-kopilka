@@ -12,8 +12,8 @@
   --cream:#f7f2e8;
   --paper:#fffaf1;
   --gold:#c99a49;
-  --terr:#8a4f37;
-  --ink:#2d241f;
+  --text:#2d241f;
+  --wine:#8a4f37;
   --line:#dcc9aa;
 }
 
@@ -21,178 +21,240 @@
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   margin:0;
   background:var(--cream);
-  color:var(--ink);
+  color:var(--text);
   font-family:Georgia,"Times New Roman",serif;
+  line-height:1.6;
 }
 
 .hero{
   background:var(--brown);
   color:#fff;
-  border-bottom:6px solid var(--gold);
+  padding:64px 24px 58px;
+  text-align:center;
 }
 
-.wrap{
+.hero-inner{
   max-width:930px;
-  margin:auto;
-  padding-left:26px;
-  padding-right:26px;
-}
-
-.hero .wrap{
-  padding-top:66px;
-  padding-bottom:64px;
+  margin:0 auto;
 }
 
 .eyebrow{
-  color:#e4b85f;
-  font-size:13px;
-  font-weight:bold;
-  letter-spacing:.18em;
+  color:#e5c17d;
+  font-size:14px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  margin-bottom:18px;
 }
 
-.hero h1{
-  margin:28px 0 10px;
-  font-size:clamp(58px,8vw,105px);
-  line-height:.82;
-  font-weight:normal;
-  letter-spacing:.035em;
+.number{
+  font-size:72px;
+  line-height:1;
+  font-weight:700;
+  color:#fff;
+  margin-bottom:10px;
 }
 
-.hero h1 .num{
-  display:block;
+h1{
+  margin:0;
+  font-size:46px;
+  line-height:1.08;
+  letter-spacing:.02em;
 }
 
 .tagline{
-  margin:26px 0 14px;
-  font-size:clamp(24px,3vw,34px);
-  font-weight:bold;
+  margin:20px auto 0;
+  color:#e7c47f;
+  font-size:21px;
 }
 
 .intro{
   max-width:760px;
-  font-family:Arial,sans-serif;
-  font-size:15px;
-  line-height:1.6;
-  color:#f0e8df;
+  margin:22px auto 0;
+  font-size:18px;
+  color:#f4ede3;
+}
+
+.back-wrap{
+  max-width:930px;
+  margin:0 auto;
+  padding:24px 24px 0;
 }
 
 .back{
-  display:inline-block;
-  margin-top:26px;
-  padding:14px 18px;
-  background:#f1d9a6;
-  color:#241b16;
+  color:var(--wine);
   text-decoration:none;
-  border-radius:4px;
-  font-family:Arial,sans-serif;
   font-weight:700;
 }
 
-main.wrap{
-  padding-top:34px;
-  padding-bottom:64px;
+.back:hover{
+  text-decoration:underline;
 }
 
-.section{
+main{
+  max-width:930px;
+  margin:0 auto;
+  padding:16px 24px 70px;
+}
+
+section{
+  margin-top:42px;
+}
+
+h2{
+  font-size:30px;
+  line-height:1.2;
+  margin:0 0 20px;
+  color:var(--brown);
+}
+
+.lead-box{
   background:var(--paper);
   border:1px solid var(--line);
-  border-radius:18px;
-  padding:24px;
-  margin-bottom:26px;
+  border-radius:16px;
+  padding:26px 30px;
+  box-shadow:0 5px 18px rgba(59,45,36,.06);
 }
 
-.section h2{
-  margin:0 0 16px;
-  color:#184b53;
-  font-size:28px;
+.lead-box p{
+  margin:0 0 12px;
 }
 
-.section p{
+.lead-box p:last-child{
+  margin-bottom:0;
+}
+
+.game-intro{
+  margin:-5px 0 24px;
   font-size:17px;
-  line-height:1.55;
 }
 
-.kicker{
-  color:var(--terr);
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:.14em;
-}
-
-.download-box h2{
-  margin-bottom:8px;
-}
-
-.download-grid{
+.gallery{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
-  margin-top:22px;
-}
-
-.btn{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:70px;
-  padding:14px;
-  background:var(--brown);
-  color:#fff;
-  text-decoration:none;
-  text-align:center;
-  border:1px solid var(--gold);
-  border-radius:10px;
-  font-family:Arial,sans-serif;
-  font-weight:700;
-  line-height:1.35;
-}
-
-.btn:hover{
-  background:#513b2e;
-}
-
-.games{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px 28px;
-  margin-top:18px;
+  grid-template-columns:1fr;
+  gap:32px;
 }
 
 .game{
-  padding:10px 0;
-  border-bottom:1px solid var(--line);
-  font-size:17px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 5px 18px rgba(59,45,36,.07);
 }
 
-.note{
-  margin-top:22px;
-  padding:18px 20px;
-  background:#f1e4ca;
-  border-left:4px solid var(--gold);
-  font-size:17px;
-  line-height:1.55;
+.game h3{
+  margin:0 0 14px;
+  color:var(--brown);
+  font-size:22px;
+  line-height:1.3;
+}
+
+.game a{
+  display:block;
+}
+
+.game img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:9px;
+  border:1px solid #e2d4bd;
+}
+
+.game-note{
+  margin:12px 0 0;
+  text-align:center;
+  font-size:14px;
+  color:#77675c;
+}
+
+.downloads{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.button{
+  display:inline-block;
+  padding:13px 18px;
+  border-radius:10px;
+  background:var(--brown);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+}
+
+.button:hover{
+  opacity:.9;
+}
+
+.button.alt{
+  background:var(--wine);
+}
+
+.teacher{
+  background:#efe4d3;
+  border-left:5px solid var(--gold);
+  border-radius:10px;
+  padding:22px 26px;
+}
+
+.teacher p{
+  margin:0 0 10px;
+}
+
+.teacher p:last-child{
+  margin-bottom:0;
 }
 
 footer{
   background:var(--brown);
-  color:#eadfce;
+  color:#e9dfd2;
   text-align:center;
-  padding:24px;
-  font-family:Arial,sans-serif;
+  padding:30px 20px;
   font-size:14px;
 }
 
-@media(max-width:760px){
-  .download-grid,
-  .games{
-    grid-template-columns:1fr;
+@media (max-width:650px){
+  .hero{
+    padding:46px 20px 42px;
   }
 
-  .hero h1{
+  .number{
     font-size:58px;
+  }
+
+  h1{
+    font-size:34px;
+  }
+
+  .tagline{
+    font-size:18px;
+  }
+
+  main{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  .back-wrap{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  .lead-box{
+    padding:22px 20px;
+  }
+
+  .game{
+    padding:10px;
   }
 }
 </style>
@@ -201,17 +263,15 @@ footer{
 <body>
 
 <header class="hero">
-  <div class="wrap">
+  <div class="hero-inner">
 
     <div class="eyebrow">
       КАРТИННАЯ ГАЛЕРЕЯ В ДЕТСКОМ САДУ
     </div>
 
-    <h1>
-      <span class="num">07</span>
-      5 МИНУТ<br>
-      В ГАЛЕРЕЕ
-    </h1>
+    <div class="number">07</div>
+
+    <h1>5 МИНУТ В ГАЛЕРЕЕ</h1>
 
     <div class="tagline">
       Одна картина • одна игра • пять минут открытий
@@ -219,148 +279,190 @@ footer{
 
     <p class="intro">
       Готовые мини-игры для короткой встречи ребёнка с произведением искусства.
-      Смотрим, замечаем, предполагаем, представляем, двигаемся и делимся
-      своими открытиями.
+      Выберите одну картину и одну игру — специальная подготовка и дополнительный
+      материал не нужны.
     </p>
-
-    <a class="back" href="index.html">
-      ← Вернуться в методическую копилку
-    </a>
 
   </div>
 </header>
 
+<div class="back-wrap">
+  <a class="back" href="index.html">← Вернуться к разделам</a>
+</div>
 
-<main class="wrap">
+<main>
 
-  <section class="section">
+<section>
+  <h2>Что находится в папке</h2>
 
-    <div class="kicker">
-      ПАПКА 07
-    </div>
-
-    <h2>Что находится в папке</h2>
-
-    <p>
-      11 готовых игровых карточек для работы с детьми 5–7 лет.
-      Каждая карточка — самостоятельная пятиминутная игра:
-      педагог выбирает одну картину и одну игру, поэтому искать
-      дополнительные задания в других папках не требуется.
-    </p>
-
-    <p>
-      В комплект также входят двусторонний методический лист
-      «Педагогу», содержание и обложки папки.
-    </p>
-
-    <div class="note">
-      <strong>Принцип папки:</strong>
-      одна картина + одна игра = готовая короткая встреча с искусством.
-      Не обязательно проводить все игры подряд и не каждая игра должна
-      подходить каждой картине.
-    </div>
-
-  </section>
+  <div class="lead-box">
+    <p><strong>11 готовых игр</strong> для работы с одной картиной в течение 3–5 минут.</p>
+    <p><strong>Методическое сопровождение «Педагогу»</strong> — как выбрать игру, разговаривать с детьми и упростить задание при необходимости.</p>
+    <p><strong>Обложки папки</strong> — внешняя и внутренняя.</p>
+  </div>
+</section>
 
 
-  <section class="section">
+<section>
+  <h2>Игры «5 минут в галерее»</h2>
 
-    <div class="kicker">
-      11 ГОТОВЫХ ИГР
-    </div>
+  <p class="game-intro">
+    Здесь можно рассмотреть все 11 карточек до скачивания.
+    На каждом листе — сторона для ребёнка и методическая сторона для педагога.
+    <strong>Нажмите на карточку, чтобы открыть её крупнее.</strong>
+  </p>
 
-    <h2>Игры «5 минут в галерее»</h2>
+  <div class="gallery">
 
-    <div class="games">
-
-      <div class="game">«Успей заметить»</div>
-
-      <div class="game">«Я вижу то, что ты не видишь»</div>
-
-      <div class="game">«Кто найдёт первым?»</div>
-
-      <div class="game">«Картина-загадка»</div>
-
-      <div class="game">«Что было потом?»</div>
-
-      <div class="game">«Тихо! Картина звучит»</div>
-
-      <div class="game">«Замри!»</div>
-
-      <div class="game">«Оживи картину»</div>
-
-      <div class="game">«Прыг в картину!»</div>
-
-      <div class="game">«Найди своё сокровище»</div>
-
-      <div class="game">«Картина потеряла название»</div>
-
-    </div>
-
-  </section>
-
-
-  <section class="section download-box">
-
-    <div class="kicker">
-      МАТЕРИАЛЫ ПАПКИ №07
-    </div>
-
-    <h2>Скачать материалы</h2>
-
-    <p>
-      Материалы подготовлены для печати в формате PDF.
-    </p>
-
-    <div class="download-grid">
-
-      <a class="btn"
-         href="07-5-minut-v-galeree-kartochki-A4-WEB.pdf"
-         download>
-        Скачать 11 игровых карточек
+    <article class="game">
+      <h3>1. «Успей заметить»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-01.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-01.jpg" alt="Карточка Успей заметить" loading="lazy">
       </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
 
-      <a class="btn"
-         href="07-5-minut-v-galeree-metodicheskoe-soprovozhdenie-WEB.pdf"
-         download>
-        Скачать методическое сопровождение
+    <article class="game">
+      <h3>2. «Я вижу то, что ты не видишь»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-02.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-02.jpg" alt="Карточка Я вижу то, что ты не видишь" loading="lazy">
       </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
 
-      <a class="btn"
-         href="07-5-minut-v-galeree-oblozhki-A4-WEB.pdf"
-         download>
-        Скачать обложки папки 07
+    <article class="game">
+      <h3>3. «Кто найдёт первым?»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-03.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-03.jpg" alt="Карточка Кто найдёт первым" loading="lazy">
       </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
 
-    </div>
+    <article class="game">
+      <h3>4. «Картина-загадка»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-04.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-04.jpg" alt="Карточка Картина-загадка" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
 
-  </section>
+    <article class="game">
+      <h3>5. «Что было потом?»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-05.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-05.jpg" alt="Карточка Что было потом" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+    <article class="game">
+      <h3>6. «Тихо! Картина звучит»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-06.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-06.jpg" alt="Карточка Тихо Картина звучит" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+    <article class="game">
+      <h3>7. «Замри!»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-07.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-07.jpg" alt="Карточка Замри" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+    <article class="game">
+      <h3>8. «Оживи картину»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-08.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-08.jpg" alt="Карточка Оживи картину" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+    <article class="game">
+      <h3>9. «Прыг в картину!»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-09.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-09.jpg" alt="Карточка Прыг в картину" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+    <article class="game">
+      <h3>10. «Найди своё сокровище»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-10.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-10.jpg" alt="Карточка Найди своё сокровище" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+    <article class="game">
+      <h3>11. «Картина потеряла название»</h3>
+      <a href="assets/07-5-minut-v-galeree-WEB-light/07-igra-11.jpg" target="_blank" rel="noopener">
+        <img src="assets/07-5-minut-v-galeree-WEB-light/07-igra-11.jpg" alt="Карточка Картина потеряла название" loading="lazy">
+      </a>
+      <p class="game-note">Нажмите на карточку, чтобы рассмотреть крупнее</p>
+    </article>
+
+  </div>
+</section>
 
 
-  <section class="section">
+<section>
+  <h2>Скачать материалы</h2>
 
-    <h2>Педагогу</h2>
+  <div class="downloads">
 
+    <a class="button"
+       href="07-5-minut-v-galeree-kartochki-A4-WEB.pdf"
+       target="_blank">
+       Карточки — PDF
+    </a>
+
+    <a class="button alt"
+       href="07-5-minut-v-galeree-metodicheskoe-soprovozhdenie-WEB.pdf"
+       target="_blank">
+       Методическое сопровождение — PDF
+    </a>
+
+    <a class="button"
+       href="07-5-minut-v-galeree-oblozhki-A4-WEB.pdf"
+       target="_blank">
+       Обложки — PDF
+    </a>
+
+  </div>
+</section>
+
+
+<section>
+  <h2>Педагогу</h2>
+
+  <div class="teacher">
     <p>
-      Выберите одну картину и одну игру. Дайте детям время посмотреть,
-      заметить, предположить, представить и высказать свою версию.
-      Не превращайте игру в проверку знаний и не ищите единственно
-      правильный ответ.
+      Выберите <strong>одну картину и одну игру</strong>. Не нужно проводить
+      все задания подряд.
     </p>
 
-    <div class="note">
-      <strong>Главное:</strong>
-      задача педагога — не рассказать ребёнку о картине всё,
-      а помочь ему самому увидеть больше.
-    </div>
+    <p>
+      Не ищите единственно правильный ответ. Просите ребёнка показать,
+      <strong>где именно на картине</strong> он увидел то, о чём говорит.
+    </p>
 
-  </section>
+    <p>
+      Лучше закончить через 3–5 минут, пока детям ещё интересно,
+      чем продолжать до утомления.
+    </p>
+
+    <p>
+      <strong>Задача педагога — не рассказать ребёнку о картине всё,
+      а помочь ему самому увидеть больше.</strong>
+    </p>
+  </div>
+</section>
 
 </main>
 
-
 <footer>
-  Мир шедевров · Картинная галерея ДОУ · 07 «5 минут в галерее»
+  Мир шедевров · Картинная галерея ДОУ
 </footer>
 
 </body>
