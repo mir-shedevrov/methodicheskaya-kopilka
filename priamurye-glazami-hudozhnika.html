@@ -56,19 +56,40 @@
 
     .series {
       margin: 16px 0;
-      padding: 16px 18px;
       border: 1px solid #d8cbb8;
       border-radius: 12px;
       background: #fffdf8;
+      overflow: hidden;
     }
 
     .series summary {
       cursor: pointer;
       font-weight: 700;
+      padding: 18px;
     }
 
-    .series li {
-      margin: 10px 0;
+    .series-body {
+      padding: 0 18px 20px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card-item {
+      display: block;
+      text-decoration: none;
+    }
+
+    .card-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #d8cbb8;
+      box-shadow: 0 4px 14px rgba(48, 53, 54, 0.10);
     }
 
     .principle {
@@ -81,6 +102,12 @@
     .downloads {
       margin-top: 36px;
       margin-bottom: 42px;
+    }
+
+    @media (max-width: 700px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -148,34 +175,133 @@
     <h2>Карточки для работы с картинами</h2>
 
     <details class="series">
-      <summary>Серия 01 «УЗНАЙ СВОЙ КРАЙ»</summary>
-      <ol>
-        <li><strong>«ГДЕ ЭТО?»</strong> — город, село, река или природа?</li>
-        <li><strong>«ЧТО ЗДЕСЬ ЕСТЬ?»</strong> — рассматриваем место и находим детали.</li>
-        <li><strong>«ЧТО СОЗДАЛ ЧЕЛОВЕК?»</strong> — различаем созданное человеком и природное.</li>
-        <li><strong>«ЧТО БЛИЖЕ — ЧТО ДАЛЬШЕ?»</strong> — замечаем пространство картины.</li>
-      </ol>
+      <summary>Серия 01 «УЗНАЙ СВОЙ КРАЙ» — 4 карточки</summary>
+
+      <div class="series-body">
+        <div class="card-grid">
+
+          <a class="card-item"
+             href="08-priamurye-s01-card-01.jpg"
+             target="_blank">
+            <img src="08-priamurye-s01-card-01.jpg"
+                 alt="Карточка Где это?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s01-card-02.jpg"
+             target="_blank">
+            <img src="08-priamurye-s01-card-02.jpg"
+                 alt="Карточка Что здесь есть?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s01-card-03.jpg"
+             target="_blank">
+            <img src="08-priamurye-s01-card-03.jpg"
+                 alt="Карточка Что создал человек?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s01-card-04.jpg"
+             target="_blank">
+            <img src="08-priamurye-s01-card-04.jpg"
+                 alt="Карточка Что ближе — что дальше?"
+                 loading="lazy">
+          </a>
+
+        </div>
+      </div>
     </details>
 
-    <details class="series">
-      <summary>Серия 02 «ХУДОЖНИК УВИДЕЛ»</summary>
-      <ol>
-        <li><strong>«КАКОЕ ВРЕМЯ ГОДА?»</strong> — ищем признаки времени года.</li>
-        <li><strong>«КАКАЯ ПОГОДА?»</strong> — замечаем признаки погоды.</li>
-        <li><strong>«МНОГО НЕБА ИЛИ МНОГО ЗЕМЛИ?»</strong> — сравниваем части пространства картины.</li>
-        <li><strong>«ТИХОЕ ИЛИ ОЖИВЛЁННОЕ МЕСТО?»</strong> — наблюдаем, что происходит в изображённом месте.</li>
-      </ol>
-    </details>
 
     <details class="series">
-      <summary>Серия 03 «МОЁ ПРИАМУРЬЕ»</summary>
-      <ol>
-        <li><strong>«ЕСТЬ ЛИ ТАКОЕ У НАС?»</strong> — узнаём знакомое.</li>
-        <li><strong>«ПОХОЖЕ ИЛИ НЕ ПОХОЖЕ?»</strong> — сравниваем изображённое место с местом, где живём.</li>
-        <li><strong>«КУДА БЫ ТЫ ПОШЁЛ?»</strong> — мысленно входим в пространство картины.</li>
-        <li><strong>«ЧТО БЫ ТЫ ПОКАЗАЛ ХУДОЖНИКУ?»</strong> — говорим о своём родном месте.</li>
-      </ol>
+      <summary>Серия 02 «ХУДОЖНИК УВИДЕЛ» — 4 карточки</summary>
+
+      <div class="series-body">
+        <div class="card-grid">
+
+          <a class="card-item"
+             href="08-priamurye-s02-card-01.jpg"
+             target="_blank">
+            <img src="08-priamurye-s02-card-01.jpg"
+                 alt="Карточка Какое время года?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s02-card-02.jpg"
+             target="_blank">
+            <img src="08-priamurye-s02-card-02.jpg"
+                 alt="Карточка Какая погода?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s02-card-03.jpg"
+             target="_blank">
+            <img src="08-priamurye-s02-card-03.jpg"
+                 alt="Карточка Много неба или много земли?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s02-card-04.jpg"
+             target="_blank">
+            <img src="08-priamurye-s02-card-04.jpg"
+                 alt="Карточка Тихое или оживлённое место?"
+                 loading="lazy">
+          </a>
+
+        </div>
+      </div>
     </details>
+
+
+    <details class="series">
+      <summary>Серия 03 «МОЁ ПРИАМУРЬЕ» — 4 карточки</summary>
+
+      <div class="series-body">
+        <div class="card-grid">
+
+          <a class="card-item"
+             href="08-priamurye-s03-card-01.jpg"
+             target="_blank">
+            <img src="08-priamurye-s03-card-01.jpg"
+                 alt="Карточка Есть ли такое у нас?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s03-card-02.jpg"
+             target="_blank">
+            <img src="08-priamurye-s03-card-02.jpg"
+                 alt="Карточка Похоже или не похоже?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s03-card-03.jpg"
+             target="_blank">
+            <img src="08-priamurye-s03-card-03.jpg"
+                 alt="Карточка Куда бы ты пошёл?"
+                 loading="lazy">
+          </a>
+
+          <a class="card-item"
+             href="08-priamurye-s03-card-04.jpg"
+             target="_blank">
+            <img src="08-priamurye-s03-card-04.jpg"
+                 alt="Карточка Что бы ты показал художнику?"
+                 loading="lazy">
+          </a>
+
+        </div>
+      </div>
+    </details>
+
 
     <p>
       Все 12 карточек собраны в один файл для просмотра и печати.
