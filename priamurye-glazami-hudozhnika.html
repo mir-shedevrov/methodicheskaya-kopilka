@@ -5,6 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>08 ПРИАМУРЬЕ ГЛАЗАМИ ХУДОЖНИКА — Мир шедевров</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .materials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin: 24px 0 10px;
+    }
+
+    .material-card {
+      border: 1px solid #d8cbb8;
+      border-radius: 14px;
+      padding: 20px;
+      background: #fffdf8;
+    }
+
+    .material-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .material-card p {
+      margin-bottom: 18px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #465D6B;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .download-btn:hover {
+      opacity: 0.88;
+    }
+
+    .route {
+      margin: 24px 0;
+      padding: 18px;
+      text-align: center;
+      border-top: 1px solid #b79a63;
+      border-bottom: 1px solid #b79a63;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .series {
+      margin: 16px 0;
+      padding: 16px 18px;
+      border: 1px solid #d8cbb8;
+      border-radius: 12px;
+      background: #fffdf8;
+    }
+
+    .series summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .series li {
+      margin: 10px 0;
+    }
+
+    .principle {
+      margin: 28px 0;
+      padding: 20px;
+      border-left: 4px solid #b79a63;
+      background: #fffdf8;
+    }
+
+    .downloads {
+      margin-top: 36px;
+      margin-bottom: 42px;
+    }
+  </style>
 </head>
 
 <body>
@@ -31,171 +109,173 @@
 
     <p>
       Материалы помогают детям 5–7 лет знакомиться с Приамурьем
-      через произведения художников: рассматривать репродукции,
-      замечать красоту родного края, сравнивать изображённое
-      со знакомыми местами и выражать свои мысли и впечатления.
-    </p>
-
-    <p>
-      В комплект входят <strong>7 учебных репродукций</strong>,
-      <strong>12 карточек</strong> трёх серий и
-      <strong>методическая подсказка воспитателю</strong>.
+      через произведения художников. В комплект входят 7 учебных
+      репродукций, 12 карточек трёх серий, методическая подсказка
+      воспитателю, содержание и обложки папки.
     </p>
 
     <div class="route">
-      СМОТРИ <span>→</span>
-      ЗАМЕЧАЙ <span>→</span>
-      ДУМАЙ <span>→</span>
-      ГОВОРИ
+      СМОТРИ → ЗАМЕЧАЙ → ДУМАЙ → ГОВОРИ
     </div>
   </section>
 
 
-  <section class="material-section">
-
-    <div class="material-heading">
-      <div class="eyebrow dark">ОСНОВНОЙ ХУДОЖЕСТВЕННЫЙ МАТЕРИАЛ</div>
-      <h2>Репродукции картин</h2>
-
-      <p>
-        Семь учебных репродукций используются как основной
-        художественный материал для работы со всеми тремя сериями карточек.
-      </p>
-    </div>
-
-    <div class="notice">
-      <strong>Сначала рассматриваем картину.</strong>
-      Ребёнку не требуется знать имя художника, название произведения
-      или точное место, изображённое на нём.
-    </div>
-
-  </section>
-
-
-  <section class="series-list">
-
-    <details class="series">
-      <summary>
-        <div>
-          <span class="series-num">01</span>
-          <strong>УЗНАЙ СВОЙ КРАЙ</strong>
-          <small>4 карточки</small>
-        </div>
-        <span class="open-label">Посмотреть карточки</span>
-      </summary>
-
-      <div class="series-body">
-        <p>
-          Рассматриваем, что изображено, находим знакомые объекты
-          и особенности родного края.
-        </p>
-
-        <ol class="clean-list">
-          <li>«Где это?»</li>
-          <li>«Что здесь есть?»</li>
-          <li>«Что создал человек?»</li>
-          <li>«Что ближе — что дальше?»</li>
-        </ol>
-      </div>
-    </details>
-
-
-    <details class="series">
-      <summary>
-        <div>
-          <span class="series-num">02</span>
-          <strong>ХУДОЖНИК УВИДЕЛ</strong>
-          <small>4 карточки</small>
-        </div>
-        <span class="open-label">Посмотреть карточки</span>
-      </summary>
-
-      <div class="series-body">
-        <p>
-          Замечаем время года и погоду, рассматриваем пространство
-          картины и особенности изображённого места.
-        </p>
-
-        <ol class="clean-list">
-          <li>«Какое время года?»</li>
-          <li>«Какая погода?»</li>
-          <li>«Много неба или много земли?»</li>
-          <li>«Тихое или оживлённое место?»</li>
-        </ol>
-      </div>
-    </details>
-
-
-    <details class="series">
-      <summary>
-        <div>
-          <span class="series-num">03</span>
-          <strong>МОЁ ПРИАМУРЬЕ</strong>
-          <small>4 карточки</small>
-        </div>
-        <span class="open-label">Посмотреть карточки</span>
-      </summary>
-
-      <div class="series-body">
-        <p>
-          Сравниваем изображённое с тем, что знакомо ребёнку,
-          и связываем картину с его собственным опытом.
-        </p>
-
-        <ol class="clean-list">
-          <li>«Есть ли такое у нас?»</li>
-          <li>«Похоже или не похоже?»</li>
-          <li>«Куда бы ты пошёл?»</li>
-          <li>«Что бы ты показал художнику?»</li>
-        </ol>
-      </div>
-    </details>
-
-  </section>
-
-
-  <section class="material-section">
-
-    <div class="material-heading">
-      <div class="eyebrow dark">МЕТОДИЧЕСКОЕ СОПРОВОЖДЕНИЕ</div>
-      <h2>Педагогу</h2>
-
-      <p>
-        Выберите одну репродукцию из комплекта, дайте ребёнку
-        время её рассмотреть, затем выберите 1–3 подходящие карточки.
-      </p>
-    </div>
-
-    <div class="notice">
-      Не нужно требовать от ребёнка знания имени художника,
-      названия картины или точного места, изображённого на ней.
-      Сначала ребёнок смотрит, замечает, сравнивает и выражает
-      собственные наблюдения.
-    </div>
-
-  </section>
-
-
-  <section class="principle compact">
-    <div class="eyebrow dark">ГЛАВНЫЙ ПРИНЦИП</div>
-
-    <blockquote>
-      Смотри • замечай • думай • говори
-    </blockquote>
+  <section>
+    <h2>Репродукции картин</h2>
 
     <p>
-      Знакомство с искусством не превращается в проверку знаний.
-      Картина становится поводом увидеть родной край внимательнее.
+      Семь учебных репродукций составляют самостоятельную часть
+      комплекта. Их можно использовать с карточками любой серии:
+      рассматривать место, детали, природные и созданные человеком
+      объекты, пространство, погоду и настроение пейзажа.
     </p>
+
+    <p>
+      От ребёнка не требуется знать имя художника, название картины
+      или точное место, изображённое на ней. Сначала ребёнок смотрит,
+      замечает, сравнивает и рассуждает.
+    </p>
+
+    <a class="download-btn"
+       href="08-priamurye-7-reproduktsiy-web.pdf"
+       target="_blank">
+      Открыть 7 репродукций
+    </a>
+  </section>
+
+
+  <section>
+    <h2>Карточки для работы с картинами</h2>
+
+    <details class="series">
+      <summary>Серия 01 «УЗНАЙ СВОЙ КРАЙ»</summary>
+      <ol>
+        <li><strong>«ГДЕ ЭТО?»</strong> — город, село, река или природа?</li>
+        <li><strong>«ЧТО ЗДЕСЬ ЕСТЬ?»</strong> — рассматриваем место и находим детали.</li>
+        <li><strong>«ЧТО СОЗДАЛ ЧЕЛОВЕК?»</strong> — различаем созданное человеком и природное.</li>
+        <li><strong>«ЧТО БЛИЖЕ — ЧТО ДАЛЬШЕ?»</strong> — замечаем пространство картины.</li>
+      </ol>
+    </details>
+
+    <details class="series">
+      <summary>Серия 02 «ХУДОЖНИК УВИДЕЛ»</summary>
+      <ol>
+        <li><strong>«КАКОЕ ВРЕМЯ ГОДА?»</strong> — ищем признаки времени года.</li>
+        <li><strong>«КАКАЯ ПОГОДА?»</strong> — замечаем признаки погоды.</li>
+        <li><strong>«МНОГО НЕБА ИЛИ МНОГО ЗЕМЛИ?»</strong> — сравниваем части пространства картины.</li>
+        <li><strong>«ТИХОЕ ИЛИ ОЖИВЛЁННОЕ МЕСТО?»</strong> — наблюдаем, что происходит в изображённом месте.</li>
+      </ol>
+    </details>
+
+    <details class="series">
+      <summary>Серия 03 «МОЁ ПРИАМУРЬЕ»</summary>
+      <ol>
+        <li><strong>«ЕСТЬ ЛИ ТАКОЕ У НАС?»</strong> — узнаём знакомое.</li>
+        <li><strong>«ПОХОЖЕ ИЛИ НЕ ПОХОЖЕ?»</strong> — сравниваем изображённое место с местом, где живём.</li>
+        <li><strong>«КУДА БЫ ТЫ ПОШЁЛ?»</strong> — мысленно входим в пространство картины.</li>
+        <li><strong>«ЧТО БЫ ТЫ ПОКАЗАЛ ХУДОЖНИКУ?»</strong> — говорим о своём родном месте.</li>
+      </ol>
+    </details>
+
+    <p>
+      Все 12 карточек собраны в один файл для просмотра и печати.
+    </p>
+
+    <a class="download-btn"
+       href="08-priamurye-kartochki-12-web.pdf"
+       target="_blank">
+      Открыть 12 карточек
+    </a>
+  </section>
+
+
+  <section>
+    <h2>Педагогу</h2>
+
+    <p>
+      Карточка задаёт направление разговора, но не превращает
+      рассматривание картины в проверку знаний. Важно дать ребёнку
+      время посмотреть, показать выбранную деталь, сформулировать
+      собственный ответ и объяснить, что помогло ему так решить.
+    </p>
+
+    <div class="principle">
+      <strong>Главный принцип:</strong><br>
+      сначала наблюдение и собственное рассуждение ребёнка —
+      затем сведения педагога о произведении.
+    </div>
+
+    <a class="download-btn"
+       href="08-priamurye-metodichka-web.pdf"
+       target="_blank">
+      Открыть методическую подсказку
+    </a>
+  </section>
+
+
+  <section class="downloads">
+    <h2>Материалы папки 08</h2>
+
+    <div class="materials-grid">
+
+      <div class="material-card">
+        <h3>Репродукции</h3>
+        <p>7 учебных репродукций без декоративных рамок.</p>
+        <a class="download-btn"
+           href="08-priamurye-7-reproduktsiy-web.pdf"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+      <div class="material-card">
+        <h3>Карточки</h3>
+        <p>12 карточек трёх серий для работы с произведениями.</p>
+        <a class="download-btn"
+           href="08-priamurye-kartochki-12-web.pdf"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+      <div class="material-card">
+        <h3>Методическая подсказка</h3>
+        <p>Двусторонний материал для педагога.</p>
+        <a class="download-btn"
+           href="08-priamurye-metodichka-web.pdf"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+      <div class="material-card">
+        <h3>Содержание</h3>
+        <p>Состав и структура папки 08.</p>
+        <a class="download-btn"
+           href="08-priamurye-soderzhanie-web.pdf"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+      <div class="material-card">
+        <h3>Обложки</h3>
+        <p>Внешняя и внутренняя обложки папки.</p>
+        <a class="download-btn"
+           href="08-priamurye-oblozhki-web.pdf"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+    </div>
   </section>
 
 </main>
 
-
 <footer>
   <div class="wrap">
-    <strong>«Мир шедевров»</strong>
-    <span>Картинная галерея ДОУ</span>
+    <p>«Мир шедевров» — картинная галерея в детском саду</p>
   </div>
 </footer>
 
